@@ -2,7 +2,7 @@
   <div>
     <h1>Cadastro de Times</h1>
     <TeamForm @add-team="addTeam" />
-    <TeamList />
+    <TeamList @delete-team="deleteTeam"/>
   </div>
 </template>
 
@@ -18,8 +18,11 @@ export default {
     const addTeam = (team) => {
       store.commit('ADD_TEAM', team);
     };
+    const deleteTeam = (team) => {
+      store.commit('DELETE_TEAM', team)
+    }
 
-    return { addTeam };
+    return { addTeam, deleteTeam };
   },
 };
 </script>
