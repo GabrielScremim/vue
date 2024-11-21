@@ -1,6 +1,6 @@
 <template>
   <!-- Formulário para adicionar um novo jogador -->
-  <form @submit.prevent="submitPlayer">
+  <form @submit.prevent="submitPlayer" style="display: flex; gap: 12px">
     <!-- Campo para o nome do jogador -->
     <input v-model="playerName" placeholder="Nome do Jogador" required />
 

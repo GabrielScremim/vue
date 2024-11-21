@@ -16,10 +16,7 @@ export default {
 };
 </script>
 <style lang="css">
-  input {
-    padding: 6px
-  }
-  
+
 /* CSS */
 button {
   background-color: #0a6bff;
@@ -50,6 +47,26 @@ button {
 button:hover {
   background-color: #065dd8;
   transform: translateY(-2px);
+}
+
+
+input {
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+input:hover,
+input:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
 }
 </style>
 
