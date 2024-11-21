@@ -1,6 +1,6 @@
 <template>
   <!-- Formulário para cadastrar um novo time -->
-  <form @submit.prevent="submitTeam">
+  <form @submit.prevent="submitTeam" style="display: flex; gap: 12px">
     <!-- Campo para o nome do time. v-model cria a ligação com a variável 'teamName' -->
     <input v-model="teamName" placeholder="Nome do Time" required />
     

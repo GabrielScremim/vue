@@ -4,7 +4,7 @@
     <!-- Lista de times: v-for itera sobre os times e exibe cada time -->
     <ul v-for="(team, index) in teams" :key="index">
       <!-- Cada item da lista de times -->
-      <li style="display: flex; width: 330px; justify-content: space-between">
+      <li style="display: flex; width: 430px; justify-content: space-between">
         <!-- Exibe o nome do time e o nome do técnico -->
         <h3 style="margin: 0">{{ team.name }} (Técnico: {{ team.coach }})</h3>
 

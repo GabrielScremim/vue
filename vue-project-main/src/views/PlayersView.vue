@@ -5,7 +5,7 @@
     
     <!-- Lista de times cadastrados -->
     <ul>
-      <li v-for="(team, index) in teams" :key="index"> <!-- Itera sobre os times cadastrados -->
+      <li v-for="(team, index) in teams" :key="index" style="margin-top: 8px"> <!-- Itera sobre os times cadastrados -->
         <!-- Exibe o nome de cada time como um botão -->
         <button @click="selectTeam(index)">{{ team.name }}</button> 
       </li>
